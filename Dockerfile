@@ -1,0 +1,8 @@
+FROM node:20
+WORKDIR /aplicacao_teste
+ARG PORT_BUILD=6000
+ENV PORT=$PORT_BUILD
+COPY . .
+RUN npm install
+EXPOSE $PORT_BUILD
+ENTRYPOINT [ "npm","start"]
