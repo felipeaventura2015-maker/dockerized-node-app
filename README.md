@@ -47,11 +47,12 @@ The application runs inside a Docker container and can be executed using Docker 
 
 ```bash
 .
-├── Dockerfile
-├── docker-compose.yml
-├── package.json
-├── package-lock.json
+├── .dockerigone
+├── .gitignore
 ├── app.js
+├── docker-compose.yml
+├── Dockerfile
+└── package.json
 └── README.md
 ```
 
@@ -103,49 +104,11 @@ docker compose up -d
 
 ---
 
-# 📄 Docker Compose Example
-
-```yml
-services:
-  app:
-    image: feliperodrigssss/appnode1.1
-    container_name: app
-    ports:
-      - "6000:6000"
-```
-
----
-
 # 🐋 Docker Image
 
 ```bash
 feliperodrigssss/appnode1.1
 ```
-
----
-
-# 🌍 Deploy Online
-
-You can deploy this application using:
-
-- Railway
-- Render
-- Fly.io
-- AWS EC2
-- DigitalOcean
-- Google Cloud
-
-## Simple Deploy Using Render
-
-1. Push project to GitHub
-2. Create Render account
-3. Click:
-   - New +
-   - Web Service
-4. Connect repository
-5. Render detects Dockerfile automatically
-6. Deploy 🚀
-
 ---
 
 # 📌 Useful Docker Commands
@@ -195,24 +158,17 @@ This project was created to demonstrate practical skills with:
 
 ---
 
-# 📸 Preview
-
-<p align="center">
-  <img width="250" src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png">
-</p>
-
----
-
 # 👨‍💻 Author
 
 ## Felipe Rodrigues
 
-- GitHub: https://github.com/feliperodrigssss
+- GitHub: https://github.com/felipeaventura2015-maker
+- Linkedin: https://www.linkedin.com/in/felipe-silva-rodriguess
 
 ---
 
 <p align="center">
 
-## ⭐ Star this repository if you liked the project!
+## ⭐ Star this repository if you liked the project and whants to support me !
 
 </p>
