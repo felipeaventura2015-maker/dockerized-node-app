@@ -1,50 +1,49 @@
-<div align="center">
-
 # 🐳 Dockerized Node App
 
-Aplicação Node.js totalmente containerizada usando Docker e Docker Compose.
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=nodejs,docker,js,linux,github" />
+</p>
 
-<img src="https://skillicons.dev/icons?i=docker,nodejs,js,github,linux" />
+<p align="center">
 
-![Docker](https://img.shields.io/badge/Docker-Containerized-blue?style=for-the-badge&logo=docker)
-![NodeJS](https://img.shields.io/badge/Node.js-Backend-green?style=for-the-badge&logo=node.js)
-![Linux](https://img.shields.io/badge/Linux-Ubuntu-orange?style=for-the-badge&logo=linux)
-![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)
+![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-Application-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-Environment-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![GitHub](https://img.shields.io/badge/GitHub-Versioning-181717?style=for-the-badge&logo=github)
 
-</div>
+</p>
 
 ---
 
-# 📖 Sobre o projeto
+# 📖 About The Project
 
-O objetivo deste projeto é demonstrar conhecimentos práticos em:
+This project demonstrates practical knowledge using:
 
 - 🐳 Docker
-- 📦 Docker Compose
-- ⚙️ Containerização de aplicações
-- 🌐 Publicação de imagens Docker
-- 🖥️ Linux
-- 🔧 Node.js
-- 📁 GitHub
+- ⚙️ Docker Compose
+- 🌐 Containerized applications
+- 🖥️ Linux environment
+- 📦 Node.js applications
+- 🔧 GitHub version control
 
-A aplicação roda dentro de um container Docker e pode ser iniciada facilmente utilizando Docker Compose ou Docker Run.
-
----
-
-# 🛠️ Tecnologias utilizadas
-
-| Tecnologia | Descrição |
-|---|---|
-| Node.js | Backend da aplicação |
-| Docker | Containerização |
-| Docker Compose | Orquestração |
-| JavaScript | Linguagem principal |
-| Linux | Ambiente de desenvolvimento |
-| GitHub | Versionamento |
+The application runs inside a Docker container and can be executed using Docker Compose or Docker Run.
 
 ---
 
-# 📂 Estrutura do projeto
+# 🛠️ Technologies
+
+| Technology | Purpose |
+|------------|----------|
+| Node.js | Backend application |
+| Docker | Containerization |
+| Docker Compose | Container orchestration |
+| JavaScript | Main language |
+| Linux | Development environment |
+| GitHub | Version control |
+
+---
+
+# 📂 Project Structure
 
 ```bash
 .
@@ -54,79 +53,166 @@ A aplicação roda dentro de um container Docker e pode ser iniciada facilmente 
 ├── package-lock.json
 ├── app.js
 └── README.md
-🐳 Executando com Docker
-🔹 Rodando com Docker Run
+```
+
+---
+
+# 🚀 Getting Started
+
+## Clone Repository
+
+```bash
+git clone https://github.com/feliperodrigssss/dockerized-node-app.git
+```
+
+```bash
+cd dockerized-node-app
+```
+
+---
+
+# 🐳 Running With Docker
+
+## Docker Run
+
+```bash
 docker run -d -p 6000:6000 feliperodrigssss/appnode1.1
+```
 
-A aplicação ficará disponível em:
+Application available at:
 
+```bash
 http://localhost:6000
-⚙️ Executando com Docker Compose
-🔹 Subindo os containers
+```
+
+---
+
+# ⚙️ Running With Docker Compose
+
+## Start Containers
+
+```bash
 docker compose up
+```
 
-Ou em background:
+## Run In Background
 
+```bash
 docker compose up -d
-📄 Exemplo do docker-compose.yml
+```
+
+---
+
+# 📄 Docker Compose Example
+
+```yml
 services:
   app:
     image: feliperodrigssss/appnode1.1
     container_name: app
     ports:
       - "6000:6000"
-🐋 Imagem Docker
-🔹 Docker Hub
+```
+
+---
+
+# 🐋 Docker Image
+
+```bash
 feliperodrigssss/appnode1.1
-🚀 Como fazer deploy online
+```
 
-Você pode publicar sua aplicação gratuitamente utilizando:
+---
 
-Plataforma	Tipo
-Railway	Fácil para iniciantes
-Render	Deploy automático
-Fly.io	Docker nativo
-AWS EC2	Profissional
-DigitalOcean	VPS
-Google Cloud	Cloud profissional
-🔹 Deploy simples usando Render
-Suba o projeto no GitHub
-Crie conta no Render
-Clique em:
-New +
-Web Service
-Conecte seu GitHub
-Selecione o repositório
-O Render detectará o Dockerfile automaticamente
-Deploy 🚀
-🎯 Objetivo
+# 🌍 Deploy Online
 
-Este projeto foi criado para praticar e demonstrar habilidades em:
+You can deploy this application using:
 
-criação de containers
-Docker Compose
-publicação de imagens
-execução de aplicações Node.js
-ambientes Linux
-GitHub
-conceitos DevOps
-📸 Preview
-🐳 Docker Container Running
-<p align="center"> <img width="700" src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png"> </p>
-📌 Comandos úteis
-Ver containers rodando
+- Railway
+- Render
+- Fly.io
+- AWS EC2
+- DigitalOcean
+- Google Cloud
+
+## Simple Deploy Using Render
+
+1. Push project to GitHub
+2. Create Render account
+3. Click:
+   - New +
+   - Web Service
+4. Connect repository
+5. Render detects Dockerfile automatically
+6. Deploy 🚀
+
+---
+
+# 📌 Useful Docker Commands
+
+## List Running Containers
+
+```bash
 docker ps
-Ver logs
+```
+
+## Show Container Logs
+
+```bash
 docker logs app
-Parar container
+```
+
+## Stop Container
+
+```bash
 docker stop app
-Remover container
+```
+
+## Remove Container
+
+```bash
 docker rm app
-Ver imagens Docker
+```
+
+## List Docker Images
+
+```bash
 docker images
-👨‍💻 Autor
-Felipe Rodrigues
-GitHub: https://github.com/feliperodrigssss
-<div align="center">
-⭐ Se gostou do projeto, deixe uma estrela no repositório!
-</div> ```
+```
+
+---
+
+# 🎯 Project Goal
+
+This project was created to demonstrate practical skills with:
+
+- Docker containers
+- Docker Compose
+- Node.js applications
+- Linux environments
+- GitHub repositories
+- DevOps fundamentals
+
+---
+
+# 📸 Preview
+
+<p align="center">
+  <img width="250" src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png">
+</p>
+
+---
+
+# 👨‍💻 Author
+
+## Felipe Rodrigues
+
+- GitHub: https://github.com/feliperodrigssss
+
+---
+
+<p align="center">
+
+## ⭐ Star this repository if you liked the project!
+
+</p>
